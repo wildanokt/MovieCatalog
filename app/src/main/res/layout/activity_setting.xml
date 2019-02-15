@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_repeat_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repeat_notif"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@color/colorTextPrimary"/>
+
+        <Switch
+            android:id="@+id/repeating_toggle"
+            android:layout_toRightOf="@id/tv_repeat_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_one_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/one_notification"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@color/colorTextPrimary"/>
+
+        <Switch
+            android:id="@+id/one_toggle"
+            android:layout_toRightOf="@id/tv_one_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SearchMovieMADE</string>
+    <string name="search_hint">Enter a Movie Title</string>
+    <string name="search_button">Search</string>
+    <string name="nav_search">Search Movie</string>
+    <string name="nav_now_playing">Now Playing</string>
+    <string name="nav_upcoming">Upcoming</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_overview">Movie Overview</string>
+    <string name="change_languange_setting">Change languange setting</string>
+    <string name="action_bar_now">Now Playing Movie</string>
+    <string name="action_bar_upcoming">Upcoming Movie</string>
+    <string name="action_bar_favorite">Favorite</string>
+    <string name="favorite">Favorite</string>
+    <string name="unfavorite">unfavorite</string>
+    <string name="add">added to favorite</string>
+    <string name="remove">removed from favorite</string>
+    <string name="fav_title">My Favorite Movie</string>
+    <string name="empty_notif">Favorite data empty</string>
+    <string name="refresh">Refresh</string>
+    <string name="appwidget_text">My Favorite Movie</string>
+    <string name="add_widget">Add widget</string>
+    <string name="empty_view">No Data</string>
+    <string name="notification_setting">Notification setting</string>
+    <string name="Repeat_message">I miss you! lets start new day together</string>
+    <string name="repeat_notif">Everyday reminder</string>
+    <string name="one_notification">Upcoming movie reminder</string>
+    <string name="setting">Setting</string>
+    <string name="message_extension">release today!</string>
+</resources>

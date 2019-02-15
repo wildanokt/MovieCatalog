@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wildanokt.searchmoviemade">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.wildanokt.searchmoviemade.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.wildanokt.searchmoviemade.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.DetailMovieItem" />
+        <activity android:name=".activity.NowPlayingActivity" />
+        <activity android:name=".activity.UpcomingActivity" />
+        <activity android:name=".activity.FavoriteActivity" />
+
+        <provider
+            android:name=".provider.MovieProvider"
+            android:authorities="com.wildanokt.searchmoviemade"
+            android:exported="true"
+            android:readPermission="com.wildanokt.searchmoviemade.READ_DATABASE"
+            android:writePermission="com.wildanokt.searchmoviemade.WRITE_DATABASE" />
+
+        <activity android:name=".activity.DetailMovieFavoriteItem" />
+
+        <receiver android:name=".widget.FavoriteWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favorite_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.StackWidgetService"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".notification.Receiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.SettingActivity"></activity>
+
+        <service android:name=".notification.scheduler.SchedulerService"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

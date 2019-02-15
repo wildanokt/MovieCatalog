@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SearchMovieMADE</string>
+    <string name="search_hint">Masukkan Judul Film</string>
+    <string name="search_button">Cari Film</string>
+    <string name="nav_search">Cari</string>
+    <string name="nav_now_playing">Sedang Tayang</string>
+    <string name="nav_upcoming">Akan Tayang</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_overview">Movie Overview</string>
+    <string name="change_languange_setting">Ubah setelan bahasa</string>
+    <string name="action_bar_now">Film yang sedang tayang</string>
+    <string name="action_bar_upcoming">Film yang akan tayang</string>
+    <string name="action_bar_favorite">Favorit</string>
+    <string name="favorite">Favorite</string>
+    <string name="unfavorite">unfavorite</string>
+    <string name="add">ditambahkan ke favorit</string>
+    <string name="remove">dihapus dari favorit</string>
+    <string name="fav_title">Film Favoritku</string>
+    <string name="empty_notif">data film favorit kosong</string>
+    <string name="refresh">Segarkan</string>
+    <string name="appwidget_text">Film Favoritku</string>
+    <string name="add_widget">Add widget</string>
+    <string name="empty_view">Data Kosong</string>
+</resources>
